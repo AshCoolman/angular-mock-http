@@ -1,0 +1,28 @@
+{
+  "name": "angular-mock-http",
+  "version": "0.0.0",
+  "description": "",
+  "main": [
+    "./dist/mock-http.js",
+    "./dist/mock-http.constant.js",
+    "./dist/mock-http.service.js"
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node ./src/index.js",
+    "build": "mkdir -p dist && coffee -c --output ./dist ./src",
+    "start": "npm run build"
+  },
+  "keywords": [],
+  "author": "Ashley Coleman <writetofish@gmail.com> (http://ashcoolman.com)",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.1.4",
+    "coffee-script": "^1.10.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.1.4"
+  }
+}
